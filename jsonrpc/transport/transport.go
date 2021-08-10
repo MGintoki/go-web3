@@ -2,6 +2,7 @@ package transport
 
 import (
 	"os"
+	"runtime"
 	"strings"
 )
 
@@ -21,7 +22,7 @@ type PubSubTransport interface {
 }
 
 const (
-	wsPrefix = "ws://"
+	wsPrefix  = "ws://"
 	wssPrefix = "wss://"
 )
 
@@ -29,6 +30,9 @@ const (
 func NewTransport(url string) (Transport, error) {
 	if strings.HasPrefix(url, wsPrefix) || strings.HasPrefix(url, wssPrefix) {
 		return newWebsocket(url)
+	}
+	if runtime.GOOS == "windows" {
+		return newHTTP(url), nil
 	}
 	if _, err := os.Stat(url); !os.IsNotExist(err) {
 		// path exists, it could be an ipc path

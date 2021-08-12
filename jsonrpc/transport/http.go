@@ -67,9 +67,11 @@ func (h *HTTP) Call(method string, out interface{}, params ...interface{}) error
 	if response.Error != nil {
 		return response.Error
 	}
-	b, _ := json.Marshal(response)
-	fmt.Println(string(b))
-	fmt.Println()
+
+	if method == "eth_getTransactionReceipt" {
+		b, _ := json.Marshal(response)
+		fmt.Println(string(b))
+	}
 
 	if err := json.Unmarshal(response.Result, out); err != nil {
 		return err

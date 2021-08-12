@@ -194,6 +194,20 @@ func (e *Eth) EstimateGasContract(bin []byte) (uint64, error) {
 	return parseUint64orHex(out)
 }
 
+// EstimateGasContractWithFrom estimates the gas to deploy a contract with from
+func (e *Eth) EstimateGasContractWithFrom(from web3.Address, bin []byte) (uint64, error) {
+	var out string
+	msg := map[string]interface{}{
+		"data": "0x" + hex.EncodeToString(bin),
+		"from": from,
+	}
+	fmt.Println("hello")
+	if err := e.c.Call("eth_estimateGas", &out, msg); err != nil {
+		return 0, err
+	}
+	return parseUint64orHex(out)
+}
+
 // EstimateGas generates and returns an estimate of how much gas is necessary to allow the transaction to complete.
 func (e *Eth) EstimateGas(msg *web3.CallMsg) (uint64, error) {
 	var out string

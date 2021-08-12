@@ -2,8 +2,6 @@ package transport
 
 import (
 	"encoding/json"
-	"fmt"
-
 	"github.com/mgintoki/go-web3/jsonrpc/codec"
 	"github.com/valyala/fasthttp"
 )
@@ -66,11 +64,6 @@ func (h *HTTP) Call(method string, out interface{}, params ...interface{}) error
 	}
 	if response.Error != nil {
 		return response.Error
-	}
-
-	if method == "eth_getTransactionReceipt" {
-		b, _ := json.Marshal(response)
-		fmt.Println(string(b))
 	}
 
 	if err := json.Unmarshal(response.Result, out); err != nil {

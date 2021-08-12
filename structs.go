@@ -126,6 +126,7 @@ type Receipt struct {
 	ContractAddress   Address
 	BlockHash         Hash
 	From              Address
+	To                Address
 	BlockNumber       uint64
 	GasUsed           uint64
 	CumulativeGasUsed uint64

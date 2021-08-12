@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/MGintoki/go-web3/testutil"
-	"github.com/MGintoki/go-web3/tracker/store"
+	"github.com/mgintoki/go-web3/testutil"
+	"github.com/mgintoki/go-web3/tracker/store"
 	"github.com/ory/dockertest"
 )
 

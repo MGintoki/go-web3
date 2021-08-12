@@ -15,10 +15,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	web3 "github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/etherscan"
-	"github.com/MGintoki/go-web3/jsonrpc/codec"
-	"github.com/MGintoki/go-web3/tracker/store"
+	web3 "github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/etherscan"
+	"github.com/mgintoki/go-web3/jsonrpc/codec"
+	"github.com/mgintoki/go-web3/tracker/store"
 )
 
 var (

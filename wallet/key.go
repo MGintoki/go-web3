@@ -5,8 +5,8 @@ import (
 	"crypto/elliptic"
 	"crypto/rand"
 
-	"github.com/MGintoki/go-web3"
 	"github.com/btcsuite/btcd/btcec"
+	"github.com/mgintoki/go-web3"
 	"golang.org/x/crypto/sha3"
 )
 

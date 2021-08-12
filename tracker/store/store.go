@@ -1,6 +1,6 @@
 package store
 
-import web3 "github.com/MGintoki/go-web3"
+import web3 "github.com/mgintoki/go-web3"
 
 // Store is a datastore for the tracker
 type Store interface {

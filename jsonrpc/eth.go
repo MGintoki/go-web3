@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/MGintoki/go-web3"
+	"github.com/mgintoki/go-web3"
 )
 
 // Eth is the eth namespace

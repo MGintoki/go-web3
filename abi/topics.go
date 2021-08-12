@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/MGintoki/go-web3"
+	"github.com/mgintoki/go-web3"
 )
 
 // ParseLog parses an event log

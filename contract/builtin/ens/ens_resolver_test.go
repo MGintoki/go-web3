@@ -4,9 +4,9 @@ import (
 	"encoding/hex"
 	"testing"
 
-	web3 "github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/jsonrpc"
-	"github.com/MGintoki/go-web3/testutil"
+	web3 "github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/jsonrpc"
+	"github.com/mgintoki/go-web3/testutil"
 	"github.com/stretchr/testify/assert"
 )
 

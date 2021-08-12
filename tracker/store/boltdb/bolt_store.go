@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/binary"
 
-	"github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/tracker/store"
 	"github.com/boltdb/bolt"
+	"github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/tracker/store"
 )
 
 var _ store.Store = (*BoltStore)(nil)

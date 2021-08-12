@@ -15,12 +15,12 @@ import (
 	"testing"
 	"time"
 
-	web3 "github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/abi"
-	"github.com/MGintoki/go-web3/jsonrpc"
-	"github.com/MGintoki/go-web3/jsonrpc/codec"
-	"github.com/MGintoki/go-web3/testutil"
-	"github.com/MGintoki/go-web3/tracker/store/inmem"
+	web3 "github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/abi"
+	"github.com/mgintoki/go-web3/jsonrpc"
+	"github.com/mgintoki/go-web3/jsonrpc/codec"
+	"github.com/mgintoki/go-web3/testutil"
+	"github.com/mgintoki/go-web3/tracker/store/inmem"
 )
 
 func testConfig() *Config {

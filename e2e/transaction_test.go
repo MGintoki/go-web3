@@ -4,10 +4,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/jsonrpc"
-	"github.com/MGintoki/go-web3/testutil"
-	"github.com/MGintoki/go-web3/wallet"
+	"github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/jsonrpc"
+	"github.com/mgintoki/go-web3/testutil"
+	"github.com/mgintoki/go-web3/wallet"
 	"github.com/stretchr/testify/assert"
 )
 

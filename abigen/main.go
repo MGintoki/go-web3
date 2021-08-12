@@ -10,7 +10,7 @@ import (
 
 	"path/filepath"
 
-	"github.com/MGintoki/go-web3/compiler"
+	"github.com/mgintoki/go-web3/compiler"
 )
 
 const (

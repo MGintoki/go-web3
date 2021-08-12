@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/MGintoki/go-web3"
+	"github.com/mgintoki/go-web3"
 	"github.com/mitchellh/mapstructure"
 )
 

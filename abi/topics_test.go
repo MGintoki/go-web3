@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/testutil"
+	"github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/testutil"
 	"github.com/stretchr/testify/assert"
 )
 

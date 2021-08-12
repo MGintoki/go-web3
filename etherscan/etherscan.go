@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/jsonrpc/codec"
+	"github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/jsonrpc/codec"
 	"github.com/valyala/fasthttp"
 )
 

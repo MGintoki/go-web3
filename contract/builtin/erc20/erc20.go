@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/big"
 
-	web3 "github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/contract"
-	"github.com/MGintoki/go-web3/jsonrpc"
+	web3 "github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/contract"
+	"github.com/mgintoki/go-web3/jsonrpc"
 )
 
 var (

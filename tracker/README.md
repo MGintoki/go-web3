@@ -13,12 +13,12 @@ import (
 	"os/signal"
 	"syscall"
 
-	web3 "github.com/MGintoki/go-web3"
-	"github.com/MGintoki/go-web3/abi"
-	"github.com/MGintoki/go-web3/jsonrpc"
-	"github.com/MGintoki/go-web3/tracker"
+	web3 "github.com/mgintoki/go-web3"
+	"github.com/mgintoki/go-web3/abi"
+	"github.com/mgintoki/go-web3/jsonrpc"
+	"github.com/mgintoki/go-web3/tracker"
 
-	boltdbStore "github.com/MGintoki/go-web3/tracker/store/boltdb"
+	boltdbStore "github.com/mgintoki/go-web3/tracker/store/boltdb"
 )
 
 func main() {

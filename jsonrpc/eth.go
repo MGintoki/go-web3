@@ -201,7 +201,6 @@ func (e *Eth) EstimateGasContractWithFrom(from web3.Address, bin []byte) (uint64
 		"data": "0x" + hex.EncodeToString(bin),
 		"from": from,
 	}
-	fmt.Println("hello")
 	if err := e.c.Call("eth_estimateGas", &out, msg); err != nil {
 		return 0, err
 	}

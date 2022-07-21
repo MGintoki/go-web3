@@ -2,6 +2,7 @@ package transport
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/mgintoki/go-web3/jsonrpc/codec"
 	"github.com/valyala/fasthttp"
 )
@@ -60,7 +61,7 @@ func (h *HTTP) Call(method string, out interface{}, params ...interface{}) error
 	// Decode json-rpc response
 	var response codec.Response
 	if err := json.Unmarshal(res.Body(), &response); err != nil {
-		return err
+		return fmt.Errorf("parse rpc response error : %s, and raw data is %s", err.Error(), string(res.Body()))
 	}
 	if response.Error != nil {
 		return response.Error

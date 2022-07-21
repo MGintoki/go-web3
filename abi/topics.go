@@ -2,6 +2,7 @@ package abi
 
 import (
 	"bytes"
+	"errors"
 	"fmt"
 	"reflect"
 
@@ -76,6 +77,8 @@ func ParseTopics(args *Type, topics []web3.Hash) ([]interface{}, error) {
 // ParseTopic parses an individual topic
 func ParseTopic(t *Type, topic web3.Hash) (interface{}, error) {
 	switch t.kind {
+	case KindTuple:
+		return nil, errors.New("tuple type in topic reconstruction")
 	case KindBool:
 		if bytes.Equal(topic[:], topicTrue[:]) {
 			return true, nil
@@ -91,7 +94,7 @@ func ParseTopic(t *Type, topic web3.Hash) (interface{}, error) {
 		return readAddr(topic[:])
 
 	default:
-		return nil, fmt.Errorf("Topic parsing for type %s not supported", t.String())
+		return Decode(t, topic[:])
 	}
 }
 

@@ -8,6 +8,8 @@ import (
 	"golang.org/x/crypto/sha3"
 )
 
+var aa string
+
 func TestWeb3ClientVersion(t *testing.T) {
 	testutil.MultiAddr(t, nil, func(s *testutil.TestServer, addr string) {
 		c, _ := NewClient(addr)
